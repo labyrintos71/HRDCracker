@@ -160,12 +160,9 @@ public class HRDCracker {
             String last=tempObj.get("atd_last_tm").toString();
             String count=tempObj.get("atd_cnt").toString();
             if(!first.equals("null"))
-                first=first.substring(0, 2)+"��"+first.substring(2, 4)+"��"+first.substring(4, 6)+"��";
+                first=first.substring(0, 2)+"시"+first.substring(2, 4)+"분"+first.substring(4, 6)+"초";
             if(!last.equals("null"))
-                last=last.substring(0, 2)+"��"+last.substring(2, 4)+"��"+last.substring(4, 6)+"��";
-            System.out.println("�Խ� �ð� : "+first);
-            System.out.println("��� �ð� : "+last);
-            System.out.println("���� Ƚ�� : "+count);
+                last=last.substring(0, 2)+"시"+first.substring(2, 4)+"분"+first.substring(4, 6)+"초";
         }else {
             jsonObj.get("result_msg");
             jsonObj.get("result_cd");
